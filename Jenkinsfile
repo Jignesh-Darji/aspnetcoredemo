@@ -3,6 +3,6 @@ node {
       git branch: 'master', url: 'https://github.com/Jignesh-Darji/aspnetcoredemo.git'
     }
     stage('build and publish') {
-        sh(script: "dotnet publish C:\\Users\\jik\\source\\repos\\aspnetcoredemo\\aspnetcoredemo.sln -c Release ", returnStdout: true)
+        sh(script: "dotnet publish aspnetcoredemo.sln -c Release ", returnStdout: true)
     }
 }
